@@ -22,3 +22,11 @@ using namespace std;
         }
         return output;
     }
+
+// int to str
+
+std::string itos(int integer){
+    std::stringstream ss;
+    ss << integer;
+    return ss.str();
+}
