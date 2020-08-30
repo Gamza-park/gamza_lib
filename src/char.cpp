@@ -24,9 +24,19 @@ using namespace std;
     }
 
 // int to str
-
 std::string itos(int integer){
     std::stringstream ss;
     ss << integer;
     return ss.str();
+}
+
+// Reverse
+std::string ReverseString(const std::string src)
+{
+      std::string reverse;
+ 
+      for(int i=0;i<src.size();i++)
+            reverse+=src.substr(src.size()-i-1,1);
+ 
+      return reverse;
 }
